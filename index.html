@@ -4,6 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dry Oar Rafting</title>
+    <style>
+        body {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 4em;
+            font-size: 22px;
+            text-align: center;
+            background-color: #fcfbfb;
+            font-family: 'Lato', Arial, sans-serif;
+        }
+
+        header {
+            padding: 1em;
+            text-align: center;
+            color: #396E94;
+            background-color: #396E94;
+        }
+
+        nav {
+            list-style-type: none;
+            display: flex;
+            background-color: #D4AC0D;
+            line-height: 3em;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        nav a {
+            padding: 1em;
+            min-width: 120px;
+            text-decoration: none;
+            padding: 10px;
+            color: #396E94;
+        }
+
+        nav a:link, nav a:visited {
+            color: #396E94;
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: #396E94;
+        }
+
+        #content {
+            margin-bottom: 2em;
+        }
+
+        #hero-msg {
+            margin-top: 2em;
+        }
+
+        .button-box {
+            margin-top: 1em;
+        }
+
+        main {
+            margin-bottom: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        .msg {
+            background-color: #6f7364;
+            padding: 35px;
+        }
+
+        .msg p {
+            padding-bottom: 15px;
+        }
+
+        footer {
+            padding: 25px 50px;
+            margin-top: 200px;
+        }
+
+        footer div {
+            display: flex;
+            justify-content: center;
+            margin-top: 1em;
+        }
+
+        footer .social img {
+            padding-top: 15px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'IM Fell French Canon', 'Bradley Hand', sans-serif;
+            color: #396E94;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .home-title {
+            font-size: 2em;
+        }
+
+        .book, .join {
+            font-size: 18px;
+        }
+
+        .msg p {
+            font-size: 0.8em;
+            line-height: 1.5em;
+        }
+
+        #logo_link {
+            padding-top: 5px;
+        }
+
+        nav a {
+            padding: 35px;
+        }
+
+        .book, .join {
+            padding: 15px 30px;
+            margin-top: 50px;
+            background-color: #d9c2a3;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .card-img {
+            border: 10px solid #d9c2a3;
+        }
+
+        main section img {
+            box-sizing: border-box;
+        }
+
+        .msg {
+            padding: 35px;
+        }
+
+        .msg p {
+            padding-bottom: 15px;
+        }
+
+        footer {
+            padding: 25px 50px;
+            margin-top: 200px;
+        }
+
+        footer .social img {
+            padding-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,19 +164,19 @@
         </a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="#">Page 2</a>
+            <a href="#">Adventure Details</a>
             <a href="site-plan-rafting.html">Site Plan</a>
             <a href="contactus.html">Contact Us</a>
         </nav>
     </header>
-    <div>
+    <div id="content">
         <div>
-            <img src="images/hero.png" alt="People enjoying rafting">
+            <img src="images/hero.png" alt="People enjoying rafting" id="hero-img">
         </div>
-        <section>
+        <section id="hero-msg">
             <h1>Have An Adventure</h1>
             <h4>Make Memories with Dry Oar</h4>
-            <div>
+            <div class="button-box">
                 <a href="contactus.html">Book Now</a>
             </div>
         </section>
@@ -40,16 +192,17 @@
             <img src="images/fire_icon.png" alt="Fire icon">
             <h2>Camping</h2>
         </section>
-        <section>
+        <section class="rapids-card"> 
             <img src="images/rapids.jpg" alt="Rafting boat">
             <img src="images/oars.png" alt="Oars icon">
             <h2>Rapids</h2>
         </section>
+        <div id="background"></div>
         <img src="images/mountains.jpg" alt="Misty mountains">
-        <section>
+        <section class="msg">
             <h2>More Than Just The Thrill</h2>
             <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
-            <a href="rivers.html">Join Us</a>
+            <a class='join' href="rivers.html">Join Us</a>
         </section>
     </main>
     <footer>
@@ -57,13 +210,13 @@
         <p><a href="site-plan-rafting.html">Site Plan</a></p>
         <p><a href="contactus.html">Contact Us</a></p>
         <div>
-            <a href="https://facebook.com">
+            <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
             </a>
-            <a href="https://twitter.com">
+            <a href="https://twitter.com" target="_blank">
                 <img src="images/twitter.png" alt="twitter icon">
             </a>
-            <a href="https://instagram.com">
+            <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
         </div>
